@@ -213,7 +213,7 @@ Here's a list of all the icons currently supported. Feel free to open an issue t
 |    `materialize`   |  <img src="./icons/Materialize-Dark.svg" width="48">  |
 |     `mariadb`      |    <img src="./icons/MariaDB.svg" width="48">         |
 |      `maven`       |     <img src="./icons/Maven-Dark.svg" width="48">     |
-|     `misskey`      |  <img src="ruby./icons/Misskey-Dark.svg" width="48">  |
+|     `misskey`      |    <img src="./icons/Misskey-Dark.svg" width="48">    |
 |      `mocha`       |      <img src="./icons/Mocha-Dark.svg" width="48">    |
 |     `mongodb`      |      <img src="./icons/MongoDB.svg" width="48">       |
 |     `notion`       |      <img src="./icons/Notion-Dark.svg" width="48">   |
