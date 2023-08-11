@@ -3,14 +3,16 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"license": "MIT",
+	"type": "module",
+	"module": "ESNext",
 	"scripts": {
-		"dev": "node build.js && miniflare --watch",
-		"build": "node build.js",
-		"deploy": "node build.js && wrangler publish"
+		"dev": "node build.js && wrangler pages dev dist --compatibility-date=2023-07-24",
+		"build": "node build.js"
 	},
 	"devDependencies": {
-		"@cloudflare/wrangler": "^1.19.8",
-		"miniflare": "^2.3.0",
-		"prettier": "^2.5.1"
+		"@cloudflare/workers-types": "^4.20230807.0",
+		"@types/node": "^20.4.9",
+		"prettier": "^3.0.1",
+		"wrangler": "^3.5.0"
 	}
 }
