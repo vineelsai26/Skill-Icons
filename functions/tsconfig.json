@@ -1,10 +1,11 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "NodeNext",
-    "lib": ["esnext"],
-    "types": ["@cloudflare/workers-types"],
-    "moduleResolution": "NodeNext",
-    "resolveJsonModule": true
-  }
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "NodeNext",
+		"lib": ["esnext"],
+		"types": ["@cloudflare/workers-types"],
+		"moduleResolution": "NodeNext",
+		"resolveJsonModule": true
+	},
+	"include": ["**/*.ts"]
 }
