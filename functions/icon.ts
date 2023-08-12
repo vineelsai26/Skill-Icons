@@ -53,7 +53,7 @@ const ICONS_PER_LINE = 15
 const ONE_ICON = 48
 const SCALE = ONE_ICON / (300 - 44)
 
-type Theme = 'dark' | 'light'
+type Theme = 'dark' | 'light' | undefined
 
 function generateSvg(iconNames: string[], perLine: number) {
 	const iconSvgList = iconNames.map(i => icons[i])
@@ -76,7 +76,7 @@ function generateSvg(iconNames: string[], perLine: number) {
 	)
 }
 
-function parseShortNames(names: string[], theme: Theme) {
+function parseShortNames(names: string[], theme: Theme = 'dark') {
 	return names.map((name) => {
 		if (iconNameList.includes(name)) {
 			return name + (themedIcons.includes(name) ? `-${theme}` : '')
@@ -119,7 +119,7 @@ export async function onRequestGet(context) {
 		)
 	}
 
-	const theme = themeParam as Theme
+	const theme = (themeParam ? themeParam : undefined) as Theme
 
 	const perLine = parseInt(searchParams.get('perline')) || ICONS_PER_LINE
 	if (isNaN(perLine) || perLine < -1 || perLine > 50) {

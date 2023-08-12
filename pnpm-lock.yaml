@@ -6,16 +6,16 @@ settings:
 
 devDependencies:
   '@cloudflare/workers-types':
-    specifier: ^4.20230807.0
+    specifier: 4.20230807.0
     version: 4.20230807.0
   '@types/node':
-    specifier: ^20.4.9
-    version: 20.4.9
+    specifier: 20.4.10
+    version: 20.4.10
   prettier:
-    specifier: ^3.0.1
+    specifier: 3.0.1
     version: 3.0.1
   wrangler:
-    specifier: ^3.5.0
+    specifier: 3.5.0
     version: 3.5.0
 
 packages:
@@ -291,8 +291,8 @@ packages:
     dev: true
     optional: true
 
-  /@types/node@20.4.9:
-    resolution: {integrity: sha512-8e2HYcg7ohnTUbHk8focoklEQYvemQmu9M/f43DZVx43kHn0tE3BY/6gSDxS7k0SprtS0NHvj+L80cGLnoOUcQ==}
+  /@types/node@20.4.10:
+    resolution: {integrity: sha512-vwzFiiy8Rn6E0MtA13/Cxxgpan/N6UeNYR9oUu6kuJWxu6zCk98trcDp8CBhbtaeuq9SykCmXkFr2lWLoPcvLg==}
     dev: true
 
   /acorn-walk@8.2.0:
